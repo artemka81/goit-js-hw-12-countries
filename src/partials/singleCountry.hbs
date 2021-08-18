@@ -1,0 +1,19 @@
+
+  <h1 class="text-center p-3">{{name}}</h1>
+  <div class="row justify-content-between">
+    <div class="col">
+      <p><b>Capital</b> {{capital}}</p>
+      <p><b>Population:</b> {{population}}</p>
+      <div class="lang">
+        <b>languages</b>
+        <ul>
+          {{#each languages}}
+          <li>{{name}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <img src="{{flag}}" class="img-fluid" alt="{{name}}">
+    </div>
+  </div>
